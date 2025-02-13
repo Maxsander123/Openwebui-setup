@@ -17,9 +17,11 @@ pip install open-webui
 echo "Installiere Ollama..."
 curl -fsSL https://ollama.com/install.sh | sh
 
+ollama pull llama3.2:1b
+
 # 3. Llama2 über Ollama starten (im Hintergrund)
 echo "Starte Ollama mit deepseek-r1:1.5b..."
-ollama pull llama3.2:1b & ollama run deepseek-r1:1.5b &
+ollama run deepseek-r1:1.5b &
 OLLAMA_PID=$!
 
 # Kurze Pause, um Ollama Zeit zum Starten zu geben
