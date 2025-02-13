@@ -34,7 +34,7 @@ echo "Warte auf die Initialisierung von open-webui..."
 sleep 5
 
 # 5. Browser öffnen (Linux: xdg-open, macOS: open)
-URL="http://127.0.0.1:5000"
+URL="http://127.0.0.1:8080"
 if command -v xdg-open >/dev/null 2>&1; then
     echo "Öffne Browser mit $URL ..."
     xdg-open "$URL"
