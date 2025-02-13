@@ -16,8 +16,8 @@ echo "Installiere Ollama..."
 curl -fsSL https://ollama.com/install.sh | sh
 
 # 3. Llama2 über Ollama starten (im Hintergrund)
-echo "Starte Ollama mit llama2:13b..."
-ollama run llama2:13b &
+echo "Starte Ollama mit deepseek-r1:1.5b..."
+ollama run deepseek-r1:1.5b &
 OLLAMA_PID=$!
 
 # Kurze Pause, um Ollama Zeit zum Starten zu geben
