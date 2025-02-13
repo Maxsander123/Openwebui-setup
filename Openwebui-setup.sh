@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e  # Skript bei Fehlern abbrechen
 
+sudo apt install python3
+
 # 1. Python Virtual Environment erstellen und aktivieren
 echo "Erstelle Python-venv..."
 python3 -m venv venv
